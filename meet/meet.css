@@ -1,0 +1,109 @@
+* {
+    /* width: 400px; */
+    /* height: 90%; */
+    color: #FFFFFF;
+    background-color: #333333;
+    font-family: 'Dongle';
+    font-size: 22px;
+}
+
+.body{
+    padding: 20px;
+    background-color: #333333;
+}
+
+.nav{
+    width: 410px;
+    padding: 10px;
+    background-color: #3d3d3d;
+}
+
+.navbtn{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3d3d3d;
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.m{
+    margin: 0 6px 0 6px;
+}
+
+.logoimg{
+    height: 75px;
+    width: 85px;
+    /* margin: 0 10px 0 10px; */
+    background-color: #FF830800;
+}
+
+.time{
+    text-align: center;
+}
+
+.time-1{
+    margin: 40px 0 0 0;
+    font-size: 50px;
+}
+
+.time-2{
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+.settings{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.active{
+    color: #FF8308;
+    border-bottom: 2px solid #FF8308;
+}
+
+.btn{
+    display: inline;
+    margin-top: 20px;
+}
+
+.settingbtn{
+    display: inline;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.img:hover{
+    transform: rotateX(180deg);
+}
+
+.meetinpt{
+    background-color: #3d3d3d;
+    margin: 20px 0 0 0;
+    width: 310px;
+    border-radius: 2rem;
+    padding: 2px 20px 2px 20px;
+}
+
+.meetinpt1{
+    background-color: #3d3d3d;
+    margin: 20px 2px 0 2px;
+    width: 150px;
+    border-radius: 2rem;
+    padding: 2px 20px 2px 20px;
+}
+
+.meethead{
+    margin: 0 0 10px 20px;
+}
+
+.schdldmeet{
+    padding: 2px 10px 2px 10px;
+    color: black;
+    margin: 0 30px 10px 30px;
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+}

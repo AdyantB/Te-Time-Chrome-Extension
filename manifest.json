@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Te Time",
+    "version": "1.0.1",
+    "description": "Helps you focus and get things done!",
+    "icons": {
+        "16": "/assets/logo/tetime_logo.png",
+        "48": "/assets/logo/tetime_logo.png",
+        "128": "/assets/logo/tetime_logo.png"
+    },
+    "action": {
+        "default_icon": "/assets/logo/tetime_logo.png",
+        "default_title": "Te Time",
+        "default_popup": "/time/time.html"
+    },
+    "permissions": [
+        "storage", "alarms", "notifications", "tabs", "activeTab", "microphone", "scripting"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["content.js"]
+        }
+      ],
+      "web_accessible_resources": [{
+        "resources": ["assets/logo/tetime_logo.png"],
+        "matches": ["<all_urls>"]
+      }]
+}

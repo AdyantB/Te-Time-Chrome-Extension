@@ -1,0 +1,268 @@
+* {
+    /* width: 400px; */
+    /* height: 90%; */
+    color: #FFFFFF;
+    background-color: #333333;
+    font-family: 'Dongle';
+    font-size: 22px;
+}
+
+.body {
+    padding: 20px;
+    background-color: #333333;
+}
+
+.nav {
+    width: 410px;
+    padding: 10px;
+    background-color: #3d3d3d;
+}
+
+.navbtn {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3d3d3d;
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.m {
+    margin: 0 6px 0 6px;
+}
+
+.logoimg {
+    height: 75px;
+    width: 85px;
+    /* margin: 0 10px 0 10px; */
+    background-color: #FF830800;
+}
+
+.time {
+    text-align: center;
+}
+
+.time-1 {
+    margin: 40px 0 0 0;
+    font-size: 50px;
+}
+
+.time-2 {
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+.settings {
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: #333333
+}
+
+.active {
+    color: #FF8308;
+    border-bottom: 2px solid #FF8308;
+}
+
+.btn {
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+.settingbtn {
+    display: inline;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.img:hover {
+    transform: rotateX(180deg);
+}
+
+.meetinpt {
+    background-color: #3d3d3d;
+    margin: 20px 0 0 0;
+    width: 310px;
+    border-radius: 2rem;
+    padding: 2px 20px 2px 20px;
+}
+
+.meetinpt1 {
+    background-color: #3d3d3d;
+    margin: 20px 2px 0 2px;
+    width: 150px;
+    border-radius: 2rem;
+    padding: 2px 20px 2px 20px;
+}
+
+.meethead {
+    margin: 0 0 10px 20px;
+    display: block;
+}
+
+.schdldmeet {
+    padding: 2px 10px 2px 10px;
+    color: black;
+    margin: 0 10px 10px 30px;
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+    display: inline-flex;
+    width: 70%;
+}
+
+.checkbox {
+    display: inline;
+}
+
+.micimg{
+    height: 25px;
+    width: 23px;
+    background-color: #ffffff00;
+}
+
+.tasks {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* .checkbox {
+    margin: 0px 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid white;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .checkbox:checked {
+    appearance: auto;
+    clip-path: circle(50% at 50% 50%);
+    background-color: orange;
+  } */
+
+  input[type="checkbox"] {
+    width: 25px;                         
+    height: 25px;                        
+    clip-path: circle(46% at 50% 50%);
+    background-color: #FF8308;  
+  }
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    height: 25px;
+    width: 25px;
+    background-color: #FFFFFF;
+    border-radius: 5rem;
+}
+
+.container:hover input~.checkmark {
+    background-color: #dedede;
+}
+
+.checkbox input:checked~.checkmark {
+    background-color: #FF8308;
+}
+
+.checkbox {
+    /* position: absolute; */
+    top: 10%;
+    right: 15%;
+    height: 25px;
+    width: 25px;
+    background-color: #FFFFFF;
+    border-radius: 5rem;
+    margin: 0px 17px 0px 15px;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 6px;
+    width: 7px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+article {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.todo_task{
+    padding: 2px 10px 2px 10px;
+    color: black;
+    /* margin: 0 10px 10px 30px; */
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+    display: inline-flex;
+    width: 70vw;
+}
+
+.list_content {
+    display: flex;
+    align-items: center;
+}
+
+.todo_body{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.remove{
+    background-image: url('/assets/images/icons8-delete-25.png');
+    background-size: 30px 30px;
+    
+    /* background-position:center; */
+    /* background-repeat:no-repeat; */
+    background-color: #ffffff00;
+    border: none;
+    margin-left: 15px;
+    /* color: white; */
+    padding: 15px;
+}
